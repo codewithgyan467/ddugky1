@@ -206,11 +206,7 @@ h2, h3 {
 }
 
 /* FontAwesome Icon in Photo Details */
-.photo-details h3::before {
-    content: "\f1c5"; /* Example for file icon */
-    font-family: 'FontAwesome';
-    margin-right: 10px;
-}
+
 .header {
     background-color: #343a40;
     color: white;
