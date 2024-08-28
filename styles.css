@@ -1,0 +1,230 @@
+
+h2, h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Section Animation */
+/* Ensure images have a consistent width and height */
+#top-section .carousel-item img {
+    width: 100%;
+    height: 2000px; /* Adjust this value to your desired height */
+    object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out infinite alternate;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.7;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Description Section */
+#description-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#description-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#description-section p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Photo Gallery */
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.photo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.photo-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    border-radius: 0 0 12px 12px;
+}
+
+.photo-item:hover .photo-details {
+    transform: translateY(0);
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+    #description-section h2 {
+        font-size: 2rem;
+    }
+
+    #description-section p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .photo-item {
+        margin-bottom: 20px;
+    }
+
+    .photo-details {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #description-section h2 {
+        font-size: 1.8rem;
+    }
+
+    #description-section p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .photo-item {
+        margin-bottom: 15px;
+    }
+
+    .photo-details {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Optical Fiber Section */
+#optical-fiber-section {
+    text-align: left;
+    background-color: #fff;
+    padding: 60px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#optical-fiber-section:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: inherit;
+    transform: skewY(-3deg);
+}
+
+#optical-fiber-section h2,
+#optical-fiber-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+#optical-fiber-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#optical-fiber-section strong {
+    color: #000;
+}
+
+/* Luminance Rotating Background */
+@keyframes rotateBackground {
+    0% {
+        background-color: rgba(255, 215, 0, 0.1); /* Light Gold */
+    }
+    25% {
+        background-color: rgba(173, 216, 230, 0.1); /* Light Blue */
+    }
+    50% {
+        background-color: rgba(144, 238, 144, 0.1); /* Light Green */
+    }
+    75% {
+        background-color: rgba(255, 182, 193, 0.1); /* Light Pink */
+    }
+    100% {
+        background-color: rgba(255, 215, 0, 0.1); /* Light Gold */
+    }
+}
+
+.col-md-4.mb-4 {
+    animation: rotateBackground 10s infinite;
+    padding: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff7e5f;
+    border-radius: 10px;
+}
+
+/* FontAwesome Icon in Photo Details */
+.photo-details h3::before {
+    content: "\f1c5"; /* Example for file icon */
+    font-family: 'FontAwesome';
+    margin-right: 10px;
+}
+.header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
