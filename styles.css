@@ -6,8 +6,8 @@ h2, h3 {
 /* Top Section Animation */
 /* Ensure images have a consistent width and height */
 #top-section .carousel-item img {
-    width: 100%;
-    height: 2000px; /* Adjust this value to your desired height */
+    width: 50%;
+    height: auto; /* Adjust this value to your desired height */
     object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
     border: 3px solid #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
