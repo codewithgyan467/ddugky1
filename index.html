@@ -10,7 +10,22 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
    
-
+    <style>
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .animated-heading {
+            position: relative; 
+            animation: bounceIn 2s infinite; 
+            font-family: 'Poppins', sans-serif; 
+            font-size: 2.5rem; 
+            color: #000000; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+            font-weight: 600;
+        }
+    </style>
 
 </head>
 <body>
@@ -90,7 +105,17 @@
              <br>
              <br>
              <br>
-             <h3>Full Forms:</h3>
+            
+
+             </div><h3>Full Forms:</h3>
+             <section id="optical-fiber-section" class="container my-5 p-4" style="padding: 10px;">
+                <div id="fullForms"> <!-- Wrap the full forms in this div -->
+                    <h3>Full Forms:</h3>
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" id="searchBox" placeholder="Search for a term..." style="padding: 10px; width: 150%;">
+                        <button onclick="searchTerms()" style="padding: 10px; width: 18%;">Search</button>
+                        <button onclick="resetTerms()" style="padding: 10px;">Refresh</button>
+                    </div>
              <p><strong>VCSEL:</strong> Vertical Cavity Surface Emitting Laser</p>
              <p><strong>IDE:</strong> Integrated Device Electronics</p>
              <p><strong>SATA:</strong> Serial Advanced Technology Attachment</p>
@@ -133,9 +158,21 @@
             <P><strong>RCC:-</strong>Reinforce Cement Concrete</P>
             <P><strong>HTTP:-</strong>Hyper Text Transfer Protocol</P>
             <P><strong>URL:-</strong>UNIFORM RESOURCE LOCATOR</P>
+            </div>
          </section>
          
-<strong><h1>Here are some equipemts nanes used in LAB</h1></strong>
+         <h1 style="
+         font-family: 'Lora', serif; /* Example of a stylish serif font */
+         font-weight: bold; /* Makes the text bold */
+         font-size: 2.5rem; /* Adjust the size to fit your design */
+         color: #333; /* Dark color for better contrast */
+         text-align: center; /* Center align the text */
+         margin: 20px 0; /* Add some vertical spacing */
+         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+     ">
+         Here are some equipment names used in LAB
+     </h1>
+     
     <!-- Photo Gallery with Hover Animation -->
     <section id="photo-gallery" class="py-5">
         <div class="container">
@@ -281,15 +318,64 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-4 mb-4">
+            <div class="photo-item">
+                <img src="power.jpeg" class="img-fluid" alt="Photo 2">
+                <div class="photo-details">
+                    <h3>Power Meter</h3>
+                    <p>Power meter is used to measure power in an optical signal</p>
+                </div>
+            </div>
+        </div>
        
     </section>
-    <h1>More notes will be updated soon stay updated</h1>
+ 
+    <h1 class="animated-heading">
+        More notes will be updated soon, stay updated
+    </h1>
+  
 
 
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+    <script>
+       function searchTerms() {
+    var input, filter, div, p, strong, i, txtValue;
+    input = document.getElementById('searchBox');
+    filter = input.value.toUpperCase();
+    div = document.getElementById("fullForms");
+    p = div.getElementsByTagName('p');  // Get all <p> tags within the #fullForms div
 
+    // Loop through all <p> tags and hide those that don't match the search query
+    for (i = 0; i < p.length; i++) {
+        strong = p[i].getElementsByTagName("strong")[0]; // Get the <strong> tag inside <p>
+        txtValue = strong.textContent || strong.innerText; // Get the text inside <strong>
+        
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            p[i].style.display = "";  // Show matching terms
+        } else {
+            p[i].style.display = "none";  // Hide non-matching terms
+        }
+    }
+}
+ // Function to reset the list and show all terms
+ function resetTerms() {
+            var div, p, i;
+            div = document.getElementById("fullForms");
+            p = div.getElementsByTagName('p');
+            
+            // Loop through all the <p> tags and show them
+            for (i = 0; i < p.length; i++) {
+                p[i].style.display = "";  // Show all terms
+            }
+            
+            // Clear the search box
+            document.getElementById('searchBox').value = "";
+        }
+        </script>
+ 
 </body>
 </html>
