@@ -246,3 +246,55 @@ h2, h3 {
     width: 100%;
     bottom: 0;
 }
+/* Button Styles */
+.btn-search, .btn-refresh {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-search {
+    background-color: #007bff; /* Blue color */
+    margin-right: 10px;
+}
+
+.btn-search:hover {
+    background-color: #0056b3; /* Darker blue */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-refresh {
+    background-color: #28a745; /* Green color */
+}
+
+.btn-refresh:hover {
+    background-color: #218838; /* Darker green */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Button Styling */
+@media (max-width: 768px) {
+    .btn-search, .btn-refresh {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-search, .btn-refresh {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .btn-search {
+        margin-right: 0;
+    }
+}
