@@ -298,3 +298,75 @@ h2, h3 {
         margin-right: 0;
     }
 }
+.notes-link {
+    display: inline-block;
+    color: blue;
+    text-decoration: none;
+    margin-bottom: 10px; /* Space between links */
+    font-size: 18px; /* Adjust font size if needed */
+}
+
+.container {
+    text-align: left; /* Align content to the left */
+}
+/* Flexbox container to align the buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* One button to the left, one to the right */
+    align-items: center;
+    margin: 20px;
+}
+
+/* General button styling */
+.styled-button {
+    padding: 20px 40px; /* Increased padding for a bigger button */
+    margin: 10px;
+    background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient background */
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3); /* Box shadow for a lifted effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover animation */
+.styled-button:hover {
+    background: linear-gradient(45deg, #0056b3, #004494); /* Darker gradient on hover */
+    box-shadow: 0 15px 25px rgba(0, 123, 255, 0.5); /* Stronger shadow */
+    transform: translateY(-5px); /* Slightly lifts the button */
+}
+
+/* Left button alignment */
+.left-button {
+    justify-self: flex-start;
+}
+
+/* Right button alignment */
+.right-button {
+    justify-self: flex-end;
+}
+
+/* Optional additional hover effect: adds a growing circle from the center */
+.styled-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s ease;
+    pointer-events: none;
+}
+
+.styled-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
