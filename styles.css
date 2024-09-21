@@ -1,14 +1,12 @@
-/* General Text Shadow */
 h2, h3 {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Darker shadow for better contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Top Section Animation */
-/* Ensure images have a consistent width and height */
 #top-section .carousel-item img {
     width: 100%;
-    height: 400px; /* Adjusted height for better view */
-    object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
+    height: 400px;
+    object-fit: cover;
     border: 3px solid #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -16,12 +14,8 @@ h2, h3 {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0.7;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0.7; }
+    to { opacity: 1; }
 }
 
 /* Description Section */
@@ -32,8 +26,8 @@ h2, h3 {
 
 #description-section h2 {
     font-size: 2.5rem;
-    font-weight: bold; /* Make headings bold */
-    color: #111; /* Darker color for better visibility */
+    font-weight: bold;
+    color: #111;
     margin-bottom: 20px;
 }
 
@@ -51,13 +45,12 @@ h2, h3 {
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(244, 241, 241, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .photo-item img {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
     width: 100%;
-    height: auto;
     border-radius: 12px;
 }
 
@@ -76,7 +69,7 @@ h2, h3 {
     text-align: center;
     padding: 10px;
     transform: translateY(100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
     border-radius: 0 0 12px 12px;
 }
 
@@ -85,36 +78,30 @@ h2, h3 {
 }
 
 .photo-details h3 {
-    font-size: 1.5rem; /* Adjusted font size for headings */
-    font-weight: bold; /* Make headings bold */
-    color: #ff7e5f; /* Stylish color */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff7e5f;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Darker shadow for better visibility */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .photo-details p {
     font-size: 1rem;
     font-weight: 300;
-    color: #ddd; /* Light color */
+    color: #ddd;
     line-height: 1.6;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile Responsiveness Improvements */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     #description-section h2 {
         font-size: 2rem;
     }
-
     #description-section p {
         font-size: 1rem;
         padding: 0 15px;
     }
-
-    .photo-item {
-        margin-bottom: 20px;
-    }
-
     .photo-details {
         padding: 8px;
         font-size: 0.9rem;
@@ -125,16 +112,10 @@ h2, h3 {
     #description-section h2 {
         font-size: 1.8rem;
     }
-
     #description-section p {
         font-size: 0.9rem;
         padding: 0 10px;
     }
-
-    .photo-item {
-        margin-bottom: 15px;
-    }
-
     .photo-details {
         padding: 6px;
         font-size: 0.8rem;
@@ -149,66 +130,47 @@ h2, h3 {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 #optical-fiber-section:before {
     content: '';
     position: absolute;
     top: -50px;
-    left: 0;
     width: 100%;
     height: 50px;
     background: inherit;
     transform: skewY(-3deg);
 }
 
-#optical-fiber-section h2,
-#optical-fiber-section h3 {
-    color: #111; /* Darker color for better visibility */
-    font-weight: bold; /* Make headings bold */
+#optical-fiber-section h2, #optical-fiber-section h3 {
+    color: #111;
+    font-weight: bold;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Darker shadow for better contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 #optical-fiber-section p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #000000;
-    margin-bottom: 15px;
-}
-
-#optical-fiber-section strong {
     color: #000;
+    margin-bottom: 15px;
 }
 
 /* Luminance Rotating Background */
 @keyframes rotateBackground {
-    0% {
-        background-color: rgb(0, 0, 0); /* Light Gold */
-    }
-    25% {
-        background-color: rgba(0, 0, 0, 0.1); /* Light Blue */
-    }
-    50% {
-        background-color: rgba(144, 238, 144, 0.1); /* Light Green */
-    }
-    75% {
-        background-color: rgba(255, 182, 193, 0.1); /* Light Pink */
-    }
-    100% {
-        background-color: rgb(1, 0, 1); /* Light Gold */
-    }
+    0% { background-color: rgb(0, 0, 0); }
+    25% { background-color: rgba(0, 0, 0, 0.1); }
+    50% { background-color: rgba(144, 238, 144, 0.1); }
+    75% { background-color: rgba(255, 182, 193, 0.1); }
+    100% { background-color: rgb(1, 0, 1); }
 }
 
 .col-md-4.mb-4 {
     animation: rotateBackground 10s infinite;
     padding: 15px;
     border-radius: 8px;
-    overflow: hidden;
-    position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Scrollbar Customization */
@@ -221,32 +183,7 @@ h2, h3 {
     border-radius: 10px;
 }
 
-/* FontAwesome Icon in Photo Details */
-.photo-details h3::before {
-    content: "\f1c5"; /* Example for file icon */
-    font-family: 'FontAwesome';
-    margin-right: 10px;
-}
-
-/* Header and Footer */
-.header {
-    background-color: #343a40;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 24px;
-}
-
-.footer {
-    background-color: #343a40;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-/* Button Styles */
+/* Buttons */
 .btn-search, .btn-refresh {
     padding: 12px 20px;
     border: none;
@@ -255,31 +192,30 @@ h2, h3 {
     font-weight: 600;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     display: inline-block;
     text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn-search {
-    background-color: #007bff; /* Blue color */
+    background-color: #007bff;
     margin-right: 10px;
 }
 
 .btn-search:hover {
-    background-color: #0056b3; /* Darker blue */
+    background-color: #0056b3;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-refresh {
-    background-color: #28a745; /* Green color */
+    background-color: #28a745;
 }
 
 .btn-refresh:hover {
-    background-color: #218838; /* Darker green */
+    background-color: #218838;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Button Styling */
 @media (max-width: 768px) {
     .btn-search, .btn-refresh {
         font-size: 0.9rem;
@@ -294,65 +230,44 @@ h2, h3 {
         width: 100%;
         margin-bottom: 10px;
     }
-    .btn-search {
-        margin-right: 0;
-    }
-}
-.notes-link {
-    display: inline-block;
-    color: blue;
-    text-decoration: none;
-    margin-bottom: 10px; /* Space between links */
-    font-size: 18px; /* Adjust font size if needed */
 }
 
-.container {
-    text-align: left; /* Align content to the left */
+.notes-link {
+    color: blue;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
-/* Flexbox container to align the buttons */
+
+/* Flexbox for button alignment */
 .button-container {
     display: flex;
-    justify-content: space-between; /* One button to the left, one to the right */
+    justify-content: space-between;
     align-items: center;
     margin: 20px;
 }
 
-/* General button styling */
 .styled-button {
-    padding: 20px 40px; /* Increased padding for a bigger button */
+    padding: 20px 40px;
     margin: 10px;
-    background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient background */
+    background: linear-gradient(45deg, #007bff, #0056b3);
     color: white;
     text-align: center;
     border: none;
     border-radius: 10px;
-    text-decoration: none;
     font-size: 18px;
-    font-family: 'Arial', sans-serif;
-    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3); /* Box shadow for a lifted effect */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s;
     position: relative;
     overflow: hidden;
 }
 
-/* Hover animation */
 .styled-button:hover {
-    background: linear-gradient(45deg, #0056b3, #004494); /* Darker gradient on hover */
-    box-shadow: 0 15px 25px rgba(0, 123, 255, 0.5); /* Stronger shadow */
-    transform: translateY(-5px); /* Slightly lifts the button */
+    background: linear-gradient(45deg, #0056b3, #004494);
+    box-shadow: 0 15px 25px rgba(0, 123, 255, 0.5);
+    transform: translateY(-5px);
 }
 
-/* Left button alignment */
-.left-button {
-    justify-self: flex-start;
-}
-
-/* Right button alignment */
-.right-button {
-    justify-self: flex-end;
-}
-
-/* Optional additional hover effect: adds a growing circle from the center */
 .styled-button::before {
     content: '';
     position: absolute;
@@ -363,8 +278,7 @@ h2, h3 {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.6s ease;
-    pointer-events: none;
+    transition: transform 0.6s;
 }
 
 .styled-button:hover::before {
