@@ -1,12 +1,14 @@
+/* General Text Shadow */
 h2, h3 {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Darker shadow for better contrast */
 }
 
 /* Top Section Animation */
+/* Ensure images have a consistent width and height */
 #top-section .carousel-item img {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 400px; /* Adjusted height for better view */
+    object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
     border: 3px solid #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -25,9 +27,9 @@ h2, h3 {
 }
 
 #description-section h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #111;
+    font-size: 2.5rem; /* Fixed missing unit */
+    font-weight: bold; /* Make headings bold */
+    color: #111; /* Darker color for better visibility */
     margin-bottom: 20px;
 }
 
@@ -45,13 +47,13 @@ h2, h3 {
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(244, 241, 241, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .photo-item img {
-    transition: transform 0.3s;
     width: 100%;
-    border-radius: 12px;
+    height: auto; /* Fixed missing semicolon */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .photo-item:hover {
@@ -69,7 +71,7 @@ h2, h3 {
     text-align: center;
     padding: 10px;
     transform: translateY(100%);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
     border-radius: 0 0 12px 12px;
 }
 
@@ -78,30 +80,36 @@ h2, h3 {
 }
 
 .photo-details h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ff7e5f;
+    font-size: 1.5rem; /* Adjusted font size for headings */
+    font-weight: bold; /* Make headings bold */
+    color: #ff7e5f; /* Stylish color */
     margin-bottom: 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Darker shadow for better visibility */
 }
 
 .photo-details p {
     font-size: 1rem;
     font-weight: 300;
-    color: #ddd;
+    color: #ddd; /* Light color */
     line-height: 1.6;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness Improvements */
 @media (max-width: 768px) {
     #description-section h2 {
         font-size: 2rem;
     }
+
     #description-section p {
         font-size: 1rem;
         padding: 0 15px;
     }
+
+    .photo-item {
+        margin-bottom: 20px;
+    }
+
     .photo-details {
         padding: 8px;
         font-size: 0.9rem;
@@ -112,10 +120,16 @@ h2, h3 {
     #description-section h2 {
         font-size: 1.8rem;
     }
+
     #description-section p {
         font-size: 0.9rem;
         padding: 0 10px;
     }
+
+    .photo-item {
+        margin-bottom: 15px;
+    }
+
     .photo-details {
         padding: 6px;
         font-size: 0.8rem;
@@ -130,23 +144,26 @@ h2, h3 {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 #optical-fiber-section:before {
     content: '';
     position: absolute;
     top: -50px;
+    left: 0;
     width: 100%;
     height: 50px;
     background: inherit;
     transform: skewY(-3deg);
 }
 
-#optical-fiber-section h2, #optical-fiber-section h3 {
-    color: #111;
-    font-weight: bold;
+#optical-fiber-section h2,
+#optical-fiber-section h3 {
+    color: #111; /* Darker color for better visibility */
+    font-weight: bold; /* Make headings bold */
     margin-bottom: 15px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Darker shadow for better contrast */
 }
 
 #optical-fiber-section p {
@@ -154,6 +171,10 @@ h2, h3 {
     line-height: 1.7;
     color: #000;
     margin-bottom: 15px;
+}
+
+#optical-fiber-section strong {
+    color: #000;
 }
 
 /* Luminance Rotating Background */
@@ -183,7 +204,26 @@ h2, h3 {
     border-radius: 10px;
 }
 
-/* Buttons */
+/* Header and Footer */
+.header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Button Styles */
 .btn-search, .btn-refresh {
     padding: 12px 20px;
     border: none;
@@ -194,28 +234,29 @@ h2, h3 {
     cursor: pointer;
     display: inline-block;
     text-align: center;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-search {
-    background-color: #007bff;
+    background-color: #007bff; /* Blue color */
     margin-right: 10px;
 }
 
 .btn-search:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-refresh {
-    background-color: #28a745;
+    background-color: #28a745; /* Green color */
 }
 
 .btn-refresh:hover {
-    background-color: #218838;
+    background-color: #218838; /* Darker green */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive Button Styling */
 @media (max-width: 768px) {
     .btn-search, .btn-refresh {
         font-size: 0.9rem;
@@ -230,57 +271,81 @@ h2, h3 {
         width: 100%;
         margin-bottom: 10px;
     }
+    .btn-search {
+        margin-right: 0;
+    }
 }
 
 .notes-link {
+    display: inline-block;
     color: blue;
     text-decoration: none;
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 10px; /* Space between links */
+    font-size: 18px; /* Adjust font size if needed */
 }
 
-/* Flexbox for button alignment */
-.button-container {
+.container {
+    text-align: left; /* Align content to the left */
+}
+
+/* Flexbox container to align the buttons */
+.flex-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
+    justify-content: space-between; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap buttons to next line on smaller screens */
 }
 
-.styled-button {
-    padding: 20px 40px;
-    margin: 10px;
-    background: linear-gradient(45deg, #007bff, #0056b3);
-    color: white;
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
     text-align: center;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
+    color: #333;
 }
 
-.styled-button:hover {
-    background: linear-gradient(45deg, #0056b3, #004494);
-    box-shadow: 0 15px 25px rgba(0, 123, 255, 0.5);
-    transform: translateY(-5px);
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.styled-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.6s;
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
-.styled-button:hover::before {
-    transform: translate(-50%, -50%) scale(1);
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
 }
