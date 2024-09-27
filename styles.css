@@ -349,6 +349,31 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #e0e0e0;
 }
+/* Button container alignment */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* General button styling */
+.styled-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
 .styled-button:hover {
     background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
     transform: translateY(-2px);
@@ -363,4 +388,3 @@ tr:hover {
 .right-button {
     margin-left: 10px;
 }
-
