@@ -349,3 +349,18 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #e0e0e0;
 }
+.styled-button:hover {
+    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button positioning */
+.left-button {
+    margin-right: 10px;
+}
+
+.right-button {
+    margin-left: 10px;
+}
+
