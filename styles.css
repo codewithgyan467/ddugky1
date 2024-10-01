@@ -278,7 +278,7 @@ h2, h3 {
 
 .notes-link {
     display: inline-block;
-    color: blue;
+    color: rgb(8, 8, 200);
     text-decoration: none;
     margin-bottom: 10px; /* Space between links */
     font-size: 18px; /* Adjust font size if needed */
@@ -338,7 +338,7 @@ th, td {
 }
 
 th {
-    background-color: #007bff;
+    background-color: #07203b;
     color: white;
 }
 
@@ -359,6 +359,8 @@ tr:hover {
 }
 
 /* General button styling */
+/* Button styles */
+/* Button styles */
 .styled-button {
     padding: 12px 24px;
     border: none;
@@ -368,23 +370,67 @@ tr:hover {
     text-align: center;
     text-decoration: none;
     color: white;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background-color: #21b54b; /* A simple blue color */
     transition: background 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 10px;
+    width: calc(30%); /* Adjust width for 3 buttons in the first row */
+}
+
+/* Specific styles for the middle button */
+.middle-button {
+    background-color: #a4d914; /* Different color for distinction */
 }
 
 /* Hover effect */
 .styled-button:hover {
-    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    background-color: #a5b811; /* Darker blue on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Button positioning */
-.left-button {
+/* Container for buttons */
+.button-container {
+    text-align: center; /* Center align the buttons */
+    margin: 20px 0;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin: 20px 0 10px;
+    font-size: 1.2em;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.options li:hover {
+    background: #d1d1d1;
+}
+
+input[type="radio"] {
     margin-right: 10px;
 }
 
-.right-button {
-    margin-left: 10px;
-}
+
+
+
