@@ -32,7 +32,7 @@ img {
 p {
     font-size: 1.1em;
     margin-bottom: 15px;
-    text-align: justify;
+    
     max-width: 80%; /* Ensures paragraphs don't stretch too wide */
     margin-left: auto;
     margin-right: auto;
