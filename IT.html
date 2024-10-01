@@ -336,29 +336,38 @@ In these printers, there is no physical contact between the print head and paper
 
  <script>
     function searchTerms() {
-        const searchBox = document.getElementById('searchBox').value.toLowerCase();
-        const termsList = document.getElementById('termsList');
-        const terms = termsList.getElementsByTagName('p');
+    var input, filter, div, p, strong, i, txtValue;
+    input = document.getElementById('searchBox');
+    filter = input.value.toUpperCase();
+    div = document.getElementById("fullForms");
+    p = div.getElementsByTagName('p');  // Get all <p> tags within the #fullForms div
 
-        for (let i = 0; i < terms.length; i++) {
-            let termText = terms[i].innerText.toLowerCase();
-            if (termText.includes(searchBox)) {
-                terms[i].style.display = '';
-            } else {
-                terms[i].style.display = 'none';
+    // Loop through all <p> tags and hide those that don't match the search query
+    for (i = 0; i < p.length; i++) {
+        strong = p[i].getElementsByTagName("strong")[0]; // Get the <strong> tag inside <p>
+        txtValue = strong.textContent || strong.innerText; // Get the text inside <strong>
+        
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            p[i].style.display = "";  // Show matching terms
+        } else {
+            p[i].style.display = "none";  // Hide non-matching terms
+        }
+    }
+}
+ // Function to reset the list and show all terms
+ function resetTerms() {
+            var div, p, i;
+            div = document.getElementById("fullForms");
+            p = div.getElementsByTagName('p');
+            
+            // Loop through all the <p> tags and show them
+            for (i = 0; i < p.length; i++) {
+                p[i].style.display = "";  // Show all terms
             }
+            
+            // Clear the search box
+            document.getElementById('searchBox').value = "";
         }
-    }
-
-    function resetTerms() {
-        document.getElementById('searchBox').value = '';
-        const termsList = document.getElementById('termsList');
-        const terms = termsList.getElementsByTagName('p');
-
-        for (let i = 0; i < terms.length; i++) {
-            terms[i].style.display = '';
-        }
-    }
 </script>
 </body>
 </html>
