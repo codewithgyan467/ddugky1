@@ -350,6 +350,17 @@ tr:hover {
     background-color: #e0e0e0;
 }
 /* Button container alignment */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap; /* Allow buttons to wrap in smaller screens */
+}
+
+/* General button styling */
+/* Button styles */
 .styled-button {
     padding: 12px 24px;
     border: none;
@@ -398,6 +409,7 @@ tr:hover {
         margin: 5px 0; /* Adjust margin for mobile */
     }
 }
+
 .quiz-container {
     max-width: 800px;
     margin: auto;
