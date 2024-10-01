@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Forms</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    
+</div><h3>Full Forms:</h3>
+<section id="optical-fiber-section" class="container my-5 p-4" style="padding: 10px;">
+   <div id="fullForms"> <!-- Wrap the full forms in this div -->
+       
+       <div style="margin-bottom: 20px;">
+           <input type="text" id="searchBox" placeholder="Search for a term..." style="padding: 10px; width: 50%;">
+           <button class="btn-search" onclick="searchTerms()">Search</button>
+           <button class="btn-refresh" onclick="resetTerms()">Refresh</button>
+           
+       </div>
+<p><strong>VCSEL:</strong> Vertical Cavity Surface Emitting Laser</p>
+<p><strong>IDE:</strong> Integrated Device Electronics</p>
+<p><strong>SATA:</strong> Serial Advanced Technology Attachment</p>
+<P><strong>EMI:-</strong> Electro Magnetic Interference </P>
+<P><strong>SM:-</strong> Single Mode </P>
+<P><strong>TIR:-</strong> Total Internal Reflection</P>
+<P><strong>CRT:-</strong>Cathode Ray Tube</P>
+<P><strong>LCD:-</strong>Liquid Crystal Display</P>
+<P><strong>MM:-</strong> Multi Mode</P>
+<P><strong>OSI:-</strong>Open System Intercommunication</P>
+<P><strong>PLC:-</strong> Planted Light Weight circuit</P>
+<P><strong>ANSI:-</strong> American National Standard institute.  </P>
+<P><strong>OTDR:-</strong> Optical Time Domain Reflectometer.</P>
+<P><strong>UTP:-</strong> Unsheeld Twisted pars cable.</P>
+<P><strong>SMPS:-</strong> Swith mode power supply. </P>
+<P><strong>POF:-</strong> Plastic optical fiber </P>
+<P><strong>LASER:-</strong> Light Amplification by Eimulated Emission Radiation. </P>
+<P><strong>FTTH:-</strong> Fiber to the Home.</P>
+<P><strong>OHS:-</strong> Occupation Health and Safety</P>
+<P><strong>LED:-</strong> Light Emelting Diod</P>
+<P><strong>FOCUS:-</strong> Fiber optic Communication</P>
+<P><strong>RFI:-</strong>Radio Frequency Interferenced </P>
+<P><strong>CATV:-</strong> Community Anthena Televison</P>
+<P><strong>PPE:-</strong> Personal Protective Equipment</P>
+<P><strong>DV:-</strong>Decibal Bytes</P>
+<P><strong>MW:-</strong>Mega Watt</P>
+
+<P><strong>CCTV:-</strong>Closed Circuit Television</P>
+<P><strong>SONET:-</strong>Synchronous optical network</P>
+<P><strong>VFL:-</strong>Visual Fault Locator</P>
+<P><strong>RJ 45:-</strong>Register Jack 45</P>
+<P><strong>IP:-</strong>Internet Protocol</P>
+<P><strong>OPM:-</strong>Optical Power Meter</P>
+<P><strong>SDH:-</strong>Synchronous Digital Hierachy</P>
+<P><strong>FRT:-</strong>Fast response Time</P>
+<P><strong>NOC:-</strong>National Occupational Centre</P>
+<P><strong>O&M:-</strong>Operation & Maintainance</P>
+<P><strong>NEC:-</strong>National Electrical Core</P>
+<P><strong>GIS:-</strong>Geographic Information System</P>
+<P><strong>RCC:-</strong>Reinforce Cement Concrete</P>
+<P><strong>HTTP:-</strong>Hyper Text Transfer Protocol</P>
+<P><strong>URL:-</strong>UNIFORM RESOURCE LOCATOR</P>
+</div>
+<br>
+
+</section>
+
+</body>
+<script>
+    function searchTerms() {
+ var input, filter, div, p, strong, i, txtValue;
+ input = document.getElementById('searchBox');
+ filter = input.value.toUpperCase();
+ div = document.getElementById("fullForms");
+ p = div.getElementsByTagName('p');  // Get all <p> tags within the #fullForms div
+
+ // Loop through all <p> tags and hide those that don't match the search query
+ for (i = 0; i < p.length; i++) {
+     strong = p[i].getElementsByTagName("strong")[0]; // Get the <strong> tag inside <p>
+     txtValue = strong.textContent || strong.innerText; // Get the text inside <strong>
+     
+     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+         p[i].style.display = "";  // Show matching terms
+     } else {
+         p[i].style.display = "none";  // Hide non-matching terms
+     }
+ }
+}
+// Function to reset the list and show all terms
+function resetTerms() {
+         var div, p, i;
+         div = document.getElementById("fullForms");
+         p = div.getElementsByTagName('p');
+         
+         // Loop through all the <p> tags and show them
+         for (i = 0; i < p.length; i++) {
+             p[i].style.display = "";  // Show all terms
+         }
+         
+         // Clear the search box
+         document.getElementById('searchBox').value = "";
+     }
+     </script>
+
+</html>
