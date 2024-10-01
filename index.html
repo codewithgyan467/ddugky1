@@ -9,7 +9,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         @keyframes bounceIn {
             0% { transform: scale(0); opacity: 0; }
@@ -24,12 +24,14 @@
             color: #000000; 
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
             font-weight: 600;
+
         }
+      
     </style>
 
 </head>
 <body>
-
+    
     <!-- Top Section with Animated Images -->
     <section id="top-section" class="text-center" style="padding: 10px;">
         <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -57,7 +59,7 @@
             </a>
         </div>
     
-
+      
     <!-- Description Section -->
     <section id="description-section" class="py-5">
         <div class="container text-center">
@@ -68,15 +70,30 @@
     <!-- Button to link to IT Notes -->
     <div class="button-container">
         <!-- Button to link to IT Notes -->
-        <a href="IT.html" class="styled-button left-button">
+        <a href="IT.html" class="styled-button">
             IT Notes
         </a>
     
+        <!-- Extra Button for MCQ -->
+        <a href="domainmcq.html" class="styled-button middle-button">
+            MCQ
+        </a>
+    
         <!-- Button to link to English and Soft Skill Notes -->
-        <a href="soft.html" class="styled-button right-button">
+        <a href="soft.html" class="styled-button">
             English and Soft Skill Notes
         </a>
     </div>
+    <div class="button-container">
+        <a href="domainequipments.html" class="styled-button">
+            LAB Equipments
+        </a>
+        
+        <a href="domainfullforms.html" class="styled-button">
+            Domain Full Forms
+        </a>
+    </div>
+    
     
     <br>
     <br>
@@ -229,387 +246,7 @@
  <h3>*Diagram of OTDR:-</h3><img src="otdrdiagram.jpeg" alt="Optical Fiber" style="max-width: 100%; height: auto;"><br><br>
  <h1>MCQ Quiz</h1>
 
-    <div class="quiz-container">
-        <div class="question">
-            1. Fiber Optic was invented by
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A) Thomas Menash</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Thomas Edision</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) John Henry Holmas</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D) None of this</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>A)Thomas Menash</p>
-        <div class="question">
-            2. Fiber optic cable operates at frequencies near 
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A) 2GHz</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) 200MHz</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) 800THz</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)20MHz</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>C)800THz</p>
-        <div class="question">
-
-        </div>
-            3. Which is the most beneficial index profile in single mode fiber?
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A) Step Index</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Co-axial cable</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Graded Index</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)Step and Graded Index</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>C)Graded Index</p>
-<div class="question">
-            4. _________ are not used nowadays for optical fiber communication system 
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A) Coaxial cable</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Multimode fiber</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Single mode fiber</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D) Multimode Graded Index Fibers</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>C)Single Mode Fiber</p>
-        <div class="question">
-            <div class="question">
-                5.Which component provides additional strength and prevent the fiber from any damage 
-            </div>
-            <ul class="options">
-                <li>
-                    <label><input type="radio" name="q1" value="A"> A) Core</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="B"> B) Cladding</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="C"> C) Buffer Coating</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="D"> D)None of the above</label>
-                </li>
-            </ul>
-            <p><Strong>Ans:-</Strong>C)Buffer coating</p>
-            <div class="question">
-                6. Which type of fiber has the Highest modal dispersion 
-            </div>
-            <ul class="options">
-                <li>
-                    <label><input type="radio" name="q1" value="A"> A) Graded Index Mode</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="B"> B)Step Index Multimode</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="C"> C) Step Index Single mode</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="D"> D)Graded Index Multimode</label>
-                </li>
-            </ul>
-            <p><Strong>Ans:-</Strong>B)Step Index Multimode</p>
-            <div class="question">
-                7.________ is used as an optical transmitter on the fiber optic communication 
-            </div>
-            <ul class="options">
-                <li>
-                    <label><input type="radio" name="q1" value="A"> A) APD</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="B"> B) LED</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="C"> C) Pin Diode</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="D"> D)LSA Diode</label>
-                </li>
-            </ul>
-            <p><Strong>Ans:-</Strong>B)LED</p>
-            <div class="question">
-                8.What is the lifetime of LED
-            </div>
-            <ul class="options">
-                <li>
-                    <label><input type="radio" name="q1" value="A"> A) 20,000 minutes</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="B"> B) 200,000 hours</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="C"> C) 150,000 minutes</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="q1" value="D"> D)150,000 hours</label>
-                </li>
-            </ul>
-            <p><Strong>Ans:-</Strong>B)200,000 hours</p>
-        </div>
-            9.What is the primary purpose of optical fiber  
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A) to transmit electrical signal</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) to transmit lights signals</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) to amplify sound waves</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)to generate Electricity</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>B)to transmit light signals</p>
- 
-10. What is the core of an optical fiber made of
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A)Glass</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Plastic </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Copper</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)Fiber Optic material </label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>A)Glass</p>
-11. Which of the following is a benifit of Optical Fiber?
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A)High Signal Lose</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Low Bandwidth </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Susceptible to interference</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)High Security </label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>A)High Security</p>
-12.In optical Fiber Communication,the signal source is waven
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A)Light</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Infrared </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Radio</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)Very Low Frequency</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>A) Light</p>
-
-13. Which of the following is not a guided medium of Transmission ?
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A)Fiber Optic Cable</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B)Co - axial Cable</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Twisted Pair Cable</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)The Atmosphere </label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>D)The Atmosphere</p>
-
-14. An operating environment has many high voltage devices.What would be the best medium of Transmission?
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A)The Atmosphere</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Twisted Pair Cable</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Optical Fiber</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)Co-Axial Cable </label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>C) Co-axial Cable</p>
-
-15. Wich of these converts the electrical signal to optical signals?
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A) Optical Photo Detectors</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Demultiplexer </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Multiplexers </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)Optical Modulator </label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>D) Optical Modulator</p>
-
-16. In Optical fiber,the outer layer is ________ and inner layer is_______
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A)Core, Cladding</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Cladding Core </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C)Transmit,Reflect</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)Reflex, Transmit</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>B)Cladding Core</p>
-
-
-17. Optical fiber cables are highly immune to EMI because information is carried by:-
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A)Light</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Electrical Means</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Magnetic Means </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D) Acoustic Means</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>A)Light</p>
-18. Which one of the following is based on laser beam technology 
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A) Magnetic Tape</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Terminal </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Optical Disks</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D) Keyboards</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>C) Optical Disks</p>
-
-19.______is a guided medium
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A) Microwave</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B)Radio </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) The Atmosphere </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)Fiber-Optic Cable </label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>D) Fiber-Optic Cable</p>
-
-20. Optical splice provides a computer between 
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A) Transmitter</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B) Reciever To Fiber </label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Fiber to Fiber</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D)Fiber to Repeater </label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>C)Fiber to Fiber</p>
-
-
-21. The material used for fabrication of inner core of an optical fiber is
-        </div>
-        <ul class="options">
-            <li>
-                <label><input type="radio" name="q1" value="A"> A)Glass Or Plastic</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="B"> B)Biometalic</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="C"> C) Copper</label>
-            </li>
-            <li>
-                <label><input type="radio" name="q1" value="D"> D) Liquid</label>
-            </li>
-        </ul>
-        <p><Strong>Ans:-</Strong>A)Glass or Plastic</p>
+   
 <h3>Difference between Mechanical Splicing and Fusion splicing:-</h3>
         
 <div class="container">
@@ -647,10 +284,10 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-
-<h3>Write 10 guideline  for optic cableing installation  ?
-</h3>
+        </div><br><br><br>
+        <h3>Corrective Maintainance Process Diagram:-</h3>
+        <img src="correctivemaintainance.jpg" alt="Optical Fiber" style="max-width: 100%; height: auto;"> 
+<h3>Write 10 guideline  for optic cableing installation  ?</h3>
 <p><strong>Ans:-</strong><ol>
     <li>Never directly  pull on he fiber itself you should pull on the fiber cable streght  members only .
     </li>
@@ -672,238 +309,16 @@
     </li>
     <li>Communicate along the path of insttation. Fiber cables can and do jump from uninonitored pulleys . The minimum crew shold have one person monitoring the pulling equipment one monitoring the supply reel , end one coordination all involved in the installation.</li>
 </ol></p>
-            
-
  <br>
 <br>
+
         
             
 
-             </div><h3>Full Forms:</h3>
-             <section id="optical-fiber-section" class="container my-5 p-4" style="padding: 10px;">
-                <div id="fullForms"> <!-- Wrap the full forms in this div -->
-                    <h3>Full Forms:</h3>
-                    <div style="margin-bottom: 20px;">
-                        <input type="text" id="searchBox" placeholder="Search for a term..." style="padding: 10px; width: 50%;">
-                        <button class="btn-search" onclick="searchTerms()">Search</button>
-                        <button class="btn-refresh" onclick="resetTerms()">Refresh</button>
-                        
-                    </div>
-             <p><strong>VCSEL:</strong> Vertical Cavity Surface Emitting Laser</p>
-             <p><strong>IDE:</strong> Integrated Device Electronics</p>
-             <p><strong>SATA:</strong> Serial Advanced Technology Attachment</p>
-             <P><strong>EMI:-</strong> Electro Magnetic Interference </P>
-             <P><strong>SM:-</strong> Single Mode </P>
-             <P><strong>TIR:-</strong> Total Internal Reflection</P>
-             <P><strong>CRT:-</strong>Cathode Ray Tube</P>
-             <P><strong>LCD:-</strong>Liquid Crystal Display</P>
-             <P><strong>MM:-</strong> Multi Mode</P>
-             <P><strong>OSI:-</strong>Open System Intercommunication</P>
-             <P><strong>PLC:-</strong> Planted Light Weight circuit</P>
-             <P><strong>ANSI:-</strong> American National Standard institute.  </P>
-             <P><strong>OTDR:-</strong> Optical Time Domain Reflectometer.</P>
-             <P><strong>UTP:-</strong> Unsheeld Twisted pars cable.</P>
-             <P><strong>SMPS:-</strong> Swith mode power supply. </P>
-             <P><strong>POF:-</strong> Plastic optical fiber </P>
-             <P><strong>LASER:-</strong> Light Amplification by Eimulated Emission Radiation. </P>
-             <P><strong>FTTH:-</strong> Fiber to the Home.</P>
-             <P><strong>OHS:-</strong> Occupation Health and Safety</P>
-             <P><strong>LED:-</strong> Light Emelting Diod</P>
-             <P><strong>FOCUS:-</strong> Fiber optic Communication</P>
-             <P><strong>RFI:-</strong>Radio Frequency Interferenced </P>
-             <P><strong>CATV:-</strong> Community Anthena Televison</P>
-             <P><strong>PPE:-</strong> Personal Protective Equipment</P>
-           <P><strong>DV:-</strong>Decibal Bytes</P>
-            <P><strong>MW:-</strong>Mega Watt</P>
-            
-           <P><strong>CCTV:-</strong>Closed Circuit Television</P>
-            <P><strong>SONET:-</strong>Synchronous optical network</P>
-            <P><strong>VFL:-</strong>Visual Fault Locator</P>
-            <P><strong>RJ 45:-</strong>Register Jack 45</P>
-            <P><strong>IP:-</strong>Internet Protocol</P>
-            <P><strong>OPM:-</strong>Optical Power Meter</P>
-            <P><strong>SDH:-</strong>Synchronous Digital Hierachy</P>
-            <P><strong>FRT:-</strong>Fast response Time</P>
-            <P><strong>NOC:-</strong>National Occupational Centre</P>
-            <P><strong>O&M:-</strong>Operation & Maintainance</P>
-            <P><strong>NEC:-</strong>National Electrical Core</P>
-            <P><strong>GIS:-</strong>Geographic Information System</P>
-            <P><strong>RCC:-</strong>Reinforce Cement Concrete</P>
-            <P><strong>HTTP:-</strong>Hyper Text Transfer Protocol</P>
-            <P><strong>URL:-</strong>UNIFORM RESOURCE LOCATOR</P>
-            </div>
-            <br>
-
-         </section>
          
-         <h1 style="font-family: 'Lora', serif; /* Example of a stylish serif font */
-         font-weight: bold; /* Makes the text bold */
-         font-size: 2.5rem; /* Adjust the size to fit your design */
-         color: #000000; /* Dark color for better contrast */
-         text-align: center; /* Center align the text */
-         margin: 20px 0; /* Add some vertical spacing */
-         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */">
-         Here are some equipment names used in LAB
-     </h1>
-     
-    <!-- Photo Gallery with Hover Animation -->
-    <section id="photo-gallery" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="photo-item">
-                        <img src="splicingmachine.jpeg" class="img-fluid" alt="Photo 1">
-                        <div class="photo-details">
-                            <h3>Splicing machine</h3>
-                            <p>A fiber splicing machine is a device used to permanently join two core together</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="photo-item">
-                        <img src="splicingtray.jpeg" class="img-fluid" alt="Photo 2">
-                        <div class="photo-details">
-                            <h3>Splicing Tray</h3>
-                            <p>It is designed to provide space to store the optical cable and the splicer and prevent them from becoming damage or misplace</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="photo-item">
-                        <img src="jointcloser.jpeg" class="img-fluid" alt="Photo 3">
-                        <div class="photo-details">
-                            <h3>Jointcloser</h3>
-                            <p>It is a device used to provide space and protection for fiber optic cable splicede together</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  <div class="container">
-            <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="reel.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Reel</h3>
-                    <p>It is round dramshaped object as apoon used to carry various type of optical fiber</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="stripper.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Stripper</h3>
-                    <p>It is used to remove the outer part of the optical fiber</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="metalcutter.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Cutter</h3>
-                    <p>It is used to cut the metal cable and fiber also</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="droptablecutter.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Drop table cutter</h3>
-                    <p>It is a tool used to remove the outer polymer layer of an optical fiber</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="scissors.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Scissors</h3>
-                    <p>It is used to Cut the soft fiber cable</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="Otdr.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>OTDR(Optical time domain Reflecto meter)</h3>
-                    <p>It is a device that the integrity of the fiber cable & is used for building maintainance and troubleshooting fiber optic system</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="twiser.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Tweezer</h3>
-                    <p>It is used to arrange and assamble tiny object</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="fiber.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Fiber Clever</h3>
-                    <p>It is used to cut the core in 90° of the optical fiber</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="roundtiny.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Round Table Cutter</h3>
-                    <p>It is used to remove the outer layer of co-axial cable(UTP cable)</p>
-                </div>
-            </div>
-        </div>  
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="isopropylalcohol.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Isopropyl Alcohol</h3>
-                    <p></p>
-                </div>
-            </div>
-        </div> 
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="stripper2.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Stripper</h3>
-                    <p>It is used to remove the outer part of the optical fiber</p>
-                </div>
-            </div>
-        </div> 
-       
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="scissors2.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Scissors</h3>
-                    <p>It is used to Cut the soft fiber cable</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="photo-item">
-                <img src="power.jpeg" class="img-fluid" alt="Photo 2">
-                <div class="photo-details">
-                    <h3>Power Meter</h3>
-                    <p>Power meter is used to measure power in an optical signal</p>
-                </div>
-            </div>
-        </div>
-       
-    </section>
- 
-    <h1 class="animated-heading">
+        
+    <br>
+        <h1 class="animated-heading">
         More notes will be updated soon, stay updated
     </h1>
   
@@ -913,42 +328,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- 
-    <script>
-       function searchTerms() {
-    var input, filter, div, p, strong, i, txtValue;
-    input = document.getElementById('searchBox');
-    filter = input.value.toUpperCase();
-    div = document.getElementById("fullForms");
-    p = div.getElementsByTagName('p');  // Get all <p> tags within the #fullForms div
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
-    // Loop through all <p> tags and hide those that don't match the search query
-    for (i = 0; i < p.length; i++) {
-        strong = p[i].getElementsByTagName("strong")[0]; // Get the <strong> tag inside <p>
-        txtValue = strong.textContent || strong.innerText; // Get the text inside <strong>
-        
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            p[i].style.display = "";  // Show matching terms
-        } else {
-            p[i].style.display = "none";  // Hide non-matching terms
-        }
-    }
-}
- // Function to reset the list and show all terms
- function resetTerms() {
-            var div, p, i;
-            div = document.getElementById("fullForms");
-            p = div.getElementsByTagName('p');
-            
-            // Loop through all the <p> tags and show them
-            for (i = 0; i < p.length; i++) {
-                p[i].style.display = "";  // Show all terms
-            }
-            
-            // Clear the search box
-            document.getElementById('searchBox').value = "";
-        }
-        </script>
- 
+</body>
+   
 </body>
 </html>
