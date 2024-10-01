@@ -1,99 +1,162 @@
-/* General Styling */
+/* General styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f0f0f0;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
-h3 {
+h1 {
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-top: 20px;
     text-align: center;
-    font-size: 2rem;
-    color: #000000;
-    margin-bottom: 20px;
 }
 
-.container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+h2, h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-size: 1.8em;
+    margin-top: 20px;
+    text-align: center;
 }
 
-/* List Styling */
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-/* Full Forms Section */
-#optical-fiber-section {
-    background-color: #ecf0f1;
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-#optical-fiber-section h3 {
-    text-align: left;
-    color: #000000;
-    font-size: 1.8rem;
-}
-
-#termsList p {
-    font-size: 1rem;
-    color: #000000;
-    margin-bottom: 8px;
-}
-
-input[type="text"] {
-    border: 2px solid #000000;
-    border-radius: 5px;
-    padding: 10px;
-    width: 60%;
-    font-size: 1rem;
+img, a {
+    border: none;
     outline: none;
 }
 
-input[type="text"]:focus {
-    border-color: #000000;
-    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+img {
+    max-width: 50%; 
+    height: auto;   
+    display: block;  
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
 }
 
-/* Button Styling */
-button {
-    padding: 10px 15px;
-    font-size: 1rem;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.btn-search {
-    background-color: #27ae60;
+
+
+
+strong {
+    color: #007BFF;
 }
 
-.btn-search:hover {
-    background-color: #2ecc71;
+section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 80%;
 }
 
+section:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+section:nth-of-type(even) {
+    background-color: #e8f4fa;
+}
+
+
+
+/* Specific styling for device images within the devices-wrapper */
+.devices-wrapper .device-image img {
+    width: 100%; /* Adjust this to control the width relative to the container */
+    max-width: 500px; /* Set a maximum width for larger images */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; 
+ 
+}
+
+/* Responsive adjustments for device images */
+@media screen and (max-width: 768px) {
+    .devices-wrapper .device-image img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .devices-wrapper .device-image img {
+        width: 80px;
+    }
+}
+
+/* Styling for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    section {
+        max-width: 95%;
+    }
+}
+
+
+.btn-search, .btn-refresh {
+    padding: 10px 20px;                  /* Adds padding inside the buttons */
+    background-color: #007BFF;           /* Sets the background color (blue) */
+    color: #fff;                         /* Sets the text color to white */
+    border: none;                        /* Removes the default border */
+    border-radius: 5px;                  /* Rounds the corners */
+    cursor: pointer;                     /* Changes cursor to pointer on hover */
+    font-size: 1em;                      /* Sets a comfortable font size */
+    margin-left: 10px;                   /* Adds space between buttons */
+    transition: background-color 0.3s ease; 
+    border-radius: 10px;/* Smooth transition for hover effect */
+}
+
+/* Hover Effects for Buttons */
+.btn-search:hover, .btn-refresh:hover {
+    background-color: #0056b3;           /* Darker blue on hover */
+}
+
+/* Optional: Differentiate the Refresh Button */
 .btn-refresh {
-    background-color: #e74c3c;
+    background-color: #07d730;           /* Sets a grey background for refresh button */
 }
 
 .btn-refresh:hover {
-    background-color: #c0392b;
+    background-color: #5a6268;           /* Darker grey on hover */
+}
+.centered-list {
+    padding: 10;
+    margin: 0 auto;
+    list-style: none;
 }
 
-/* Button Hover Effect */
-button:hover {
-    opacity: 0.9;
+.centered-list li {
+    text-indent: 100px;
+    margin-bottom: 10px;
+ 
+
 }
 
-p strong {
-    color: #000000;
-}
