@@ -350,17 +350,6 @@ tr:hover {
     background-color: #e0e0e0;
 }
 /* Button container alignment */
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* General button styling */
-/* Button styles */
-/* Button styles */
 .styled-button {
     padding: 12px 24px;
     border: none;
@@ -370,7 +359,7 @@ tr:hover {
     text-align: center;
     text-decoration: none;
     color: white;
-    background-color: #21b54b; /* A simple blue color */
+    background-color: #21b54b; /* A simple green color */
     transition: background 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: inline-block;
@@ -385,7 +374,7 @@ tr:hover {
 
 /* Hover effect */
 .styled-button:hover {
-    background-color: #a5b811; /* Darker blue on hover */
+    background-color: #a5b811; /* Darker color on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
@@ -396,6 +385,19 @@ tr:hover {
     margin: 20px 0;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .styled-button {
+        width: calc(45%); /* Two buttons in a row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .styled-button {
+        width: 100%; /* Full width buttons for very small screens */
+        margin: 5px 0; /* Adjust margin for mobile */
+    }
+}
 .quiz-container {
     max-width: 800px;
     margin: auto;
