@@ -4,14 +4,13 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    
+    text-align: center; /* Aligns all content to the center horizontally */
 }
 
 h1 {
     font-size: 2.5em;
     color: #007BFF;
     margin-top: 20px;
-text-align: centre;
 }
 
 h2, h3 {
@@ -33,12 +32,13 @@ img {
 p {
     font-size: 1.1em;
     margin-bottom: 15px;
-    
+    text-align: justify;
     max-width: 80%; /* Ensures paragraphs don't stretch too wide */
     margin-left: auto;
     margin-right: auto;
 }
-
+
+
 
 strong {
     color: #007BFF;
@@ -79,3 +79,4 @@ section {
         max-width: 95%;
     }
 }
+/* Styling for unordered and ordered lists */
